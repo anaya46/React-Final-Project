@@ -1,0 +1,89 @@
+.ppal-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ppal-img{
+    height: 300px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+.pq{
+    display: flex;
+   flex-direction: row;
+   justify-content: left;
+   margin-left: 5px;
+}
+.price-title{
+    color: rgb(180, 178, 178);
+    
+}
+.input-count{
+ margin-left: 25px;
+}
+.value{
+    line-height: 1.7;
+    padding: 0 20px;
+    border: 1px solid rgb(180, 178, 178);
+}
+.quatNam{
+    margin-right: 5px;
+}
+.textAdd{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.disc{
+    color:#f3969a;
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.second-img{
+    height: 250px;
+    object-fit: contain;
+    margin-top: 10px;
+ 
+}
+
+.descrip{
+    text-align: justify
+}
+
+.butAdd{
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+.butt2{
+   border: #78c2ad;
+    background-color: #78c2ad;
+    border-radius: 50%;
+    bottom: 30px;
+    color: #fff;
+    font-size: 1.3rem;
+    height: 50px;
+    line-height: 0;
+    position: absolute;
+    right: 30px;
+    width: 50px;
+
+}
+.prodTitle{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.price2{
+    margin-left: 15px;
+}

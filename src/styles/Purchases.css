@@ -2,7 +2,7 @@
 li {
     list-style: none;
 }
-
+/*
 .card{
    margin-top: 30px;
    max-width: 75%;
@@ -10,7 +10,7 @@ li {
    margin-left: auto;
    margin-right: auto;
 }
-
+*/
 .date {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -45,17 +45,4 @@ li {
     width: 10rem;
     text-align: center;
 }
-/*
-.carro-compras-overlay{
-    width: 100vw;
-    min-height: 100vh;
-    background-color: rgba(122, 122, 122, 0.397);
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: none;
-    z-index: var(--z-fixed);
-}
-.carro-compras-overlay.mostrar{
-    display: block;
-*/
+

@@ -28,8 +28,9 @@ useEffect(() =>{
         <div>
             <Row>
                 <Col lg={3}>
+                    <h6>Search by categories...</h6>
                     <ListGroup>
-                        <h3>Categories</h3>
+                       
                         {
                             categories.map(category => (
                                 <ListGroup.Item key={category.id} onClick={()=> dispatch(filterCategoryThunk(category.id))}>
@@ -41,27 +42,20 @@ useEffect(() =>{
                     </ListGroup>
                  </Col>
                 <Col>
-                    
-                    <InputGroup className="mb-3">
-                        <Form.Control
-                            placeholder="What are you looking for?"
-                            aria-label="Recipient's username"
-                            aria-describedby="basic-addon2"
-                            onChange={e => setSearchValue(e.target.value)}
-                            value={searchValue}
-                            />
-                    <Button variant="outline-secondary" onClick={()=> dispatch(filterTitleThunk(searchValue))}>
-                        <i className='fa-solid fa-magnifying-glass'></i>   
-                    </Button>
-                    </InputGroup>
-
-
-
-
-
-
-
-
+                    <div className="mt-4">
+                        <InputGroup className="mb-3">
+                            <Form.Control
+                                placeholder="what are you looking for today?"
+                                aria-label="Recipient's username"
+                                aria-describedby="basic-addon2"
+                                onChange={e => setSearchValue(e.target.value)}
+                                value={searchValue}
+                                />
+                        <Button variant="outline-secondary" onClick={()=> dispatch(filterTitleThunk(searchValue))}>
+                            <i className='fa-solid fa-magnifying-glass'></i>   
+                        </Button>
+                        </InputGroup>
+                    </div>
 
                     <Row xs={1} md={2} xl={3} className="g-4">
                         {products?.map(product =>(

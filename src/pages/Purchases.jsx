@@ -22,7 +22,7 @@ const Purchases = () => {
                     purchases.map(purchase => (
                         <div className='card' key={purchase.id}>
                             <div className='date'>
-                              <b>{purchase.updatedAt}</b>
+                              <b>{new Date(purchase.updatedAt).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"}) }</b>
                             </div>
                                 <div>
                                {    purchase.cart?.products.map(finalPurchases => (
